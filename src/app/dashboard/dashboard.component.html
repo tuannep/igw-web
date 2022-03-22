@@ -1,0 +1,30 @@
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+  <!-- Main Content -->
+  <div id="content">
+    <!-- Topbar -->
+    <app-header></app-header>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+      <!-- Page Heading -->
+      <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h4 mb-0 text-gray-800" (click)="gotoDirect('dashboard')" >
+              <i class="fas fa-home"></i>
+          </h1>
+      </div> -->
+<!--      <app-breadcrumb></app-breadcrumb>-->
+
+      <router-outlet></router-outlet>
+    </div>
+    <!-- End Page Content -->
+  </div>
+  <!-- End of Main Content -->
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+  <!-- End of Footer -->
+</div>
+<!-- End of Content Wrapper -->
