@@ -18,27 +18,27 @@ export class HomeComponent implements OnInit {
       case "sender":
         this.router.navigate(['/dashboard/sender']);
         break;
-      case "receiver":
-        this.router.navigate(['/dashboard/receiver']);
-        break;
-      case "debitcap":
-        this.router.navigate(['/dashboard/debitcap']);
-        break;
-      case "inquirycopy":
-        this.router.navigate(['/dashboard/inquiry-copy']);
-        break;
-      case "report":
-        this.router.navigate(['/dashboard/report']);
-        break;
-      case "traceuser":
-        this.router.navigate(['/dashboard/trace-user']);
-        break;
+      // case "receiver":
+      //   this.router.navigate(['/dashboard/receiver']);
+      //   break;
+      // case "debitcap":
+      //   this.router.navigate(['/dashboard/debitcap']);
+      //   break;
+      // case "inquirycopy":
+      //   this.router.navigate(['/dashboard/inquiry-copy']);
+      //   break;
+      // case "report":
+      //   this.router.navigate(['/dashboard/report']);
+      //   break;
+      // case "traceuser":
+      //   this.router.navigate(['/dashboard/trace-user']);
+      //   break;
       case "config":
         this.router.navigate(['/dashboard/config']);
         break;
-      case "tracefile":
-        this.router.navigate(['/dashboard/trace-file']);
-        break;
+      // case "tracefile":
+      //   this.router.navigate(['/dashboard/trace-file']);
+      //   break;
     }
 
   }

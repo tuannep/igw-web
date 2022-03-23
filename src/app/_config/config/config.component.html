@@ -1,0 +1,74 @@
+
+<!-- <router-outlet></router-outlet> -->
+<!-- Content Row -->
+<div class="row">
+  <div class="col-xl-3 col-md-6 mb-4" (click)="gotoDirect('list-user')">
+    <div class="card border-left-primary shadow h-100 py-2" [class.myClass]="isShowCreate">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="h5 font-weight-bold text-dark text-uppercase">Tạo mới người dùng (Create)</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-paper-plane fa-2x text-gray-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4" (click)="gotoDirect('trace-file')">
+    <div class="card border-left-primary shadow h-100 py-2" [class.myClass]="isShowTrace">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="h5 font-weight-bold text-dark text-uppercase">Quản lý file phí sử dụng (Files Management)</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-paper-plane fa-2x text-gray-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4" (click)="gotoDirect('trace-user')">
+    <div class="card border-left-primary shadow h-100 py-2" [class.myClass]="isShowTraceUser">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="h5 font-weight-bold text-dark text-uppercase">Quản lý sử dụng (User Management)</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-paper-plane fa-2x text-gray-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4" (click)="gotoDirect('trace-job')">
+    <div class="card border-left-primary shadow h-100 py-2" [class.myClass]="isShowTraceJob">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="h5 font-weight-bold text-dark text-uppercase">Quản lý job (Job Management)</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-paper-plane fa-2x text-gray-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Row-->
+
+<div>
+  <app-list-user [hidden]="!isShowCreate"></app-list-user>
+  <app-trace-sftp-file [hidden]="!isShowTrace"></app-trace-sftp-file>
+  <app-trace-user-action [hidden]="!isShowTraceUser"></app-trace-user-action>
+  <app-trace-job [hidden]="!isShowTraceJob"></app-trace-job>
+</div>
+
+
