@@ -24,6 +24,8 @@ import { ListUserComponent } from './_config/list-user/list-user.component';
 import { TraceUserComponent } from './_config/trace-user/trace-user.component';
 import { TraceUserActionComponent } from './_config/trace-user-action/trace-user-action.component';
 import { TraceSftpFileComponent } from './_config/trace-sftp-file/trace-sftp-file.component';
+import { TraceJobComponent } from './_config/trace-job/trace-job.component';
+import { BreadcrumbComponent } from './_components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { TraceSftpFileComponent } from './_config/trace-sftp-file/trace-sftp-fil
     ListUserComponent,
     TraceUserComponent,
     TraceUserActionComponent,
-    TraceSftpFileComponent
+    TraceSftpFileComponent,
+    TraceJobComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,

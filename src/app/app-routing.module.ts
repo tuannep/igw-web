@@ -48,15 +48,16 @@ const routes: Routes = [
           //     {path: 'receive-return-resp', component: ReceiveReturnRespComponent}
           //   ]
           // },
-          {path: 'config', component: ConfigComponent, canActivate: [AuthGuard], data: {role: ['CHECKER']},
-            children: [
-              {path: 'list-user', component: ListUserComponent},
-              {path: 'trace-user', component: TraceUserActionComponent},
-              {path: 'trace-file', component: TraceSftpFileComponent}
-            ]
-          },
+
         ]
-      }
+      },
+      {path: 'config', component: ConfigComponent, canActivate: [AuthGuard], data: {role: ['CHECKER']},
+        children: [
+          {path: 'list-user', component: ListUserComponent},
+          {path: 'trace-user', component: TraceUserActionComponent},
+          {path: 'trace-file', component: TraceSftpFileComponent}
+        ]
+      },
     ]
   }
 ];
